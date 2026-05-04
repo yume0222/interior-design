@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interior Designの会社情報ページです。私たちはインテリアを通して住居や店舗の空間をデザインし、その空間の中に新たな価値を創造します。"
+    />
+    <title>Company | Interior Design</title>
+    <link rel="icon" href="img/common/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/company.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img
+            src="img/common/logo.svg"
+            alt="Interior Design"
+            class="header__logo-img"
+          />
+        </a>
+      </div>
+      <nav
+        class="header__nav"
+        id="global-nav"
+        aria-label="グローバルナビゲーション"
+      >
+        <ul class="header__nav-list" id="subnav-company">
+          <li class="header__nav-item header__nav-item--has-children">
+            <button
+              class="header__nav-label"
+              aria-expanded="false"
+              aria-controls="subnav-company"
+            >
+              会社情報
+            </button>
+            <ul class="header__subnav-list">
+              <li class="header__subnav-item">
+                <a href="company.html#philosophy" class="header__subnav-link"
+                  >企業理念</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#service" class="header__subnav-link"
+                  >事業紹介</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#overview" class="header__subnav-link"
+                  >会社概要</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#access" class="header__subnav-link"
+                  >アクセス</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="products.html" class="header__nav-link">商品一覧</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="works.html" class="header__nav-link">実績紹介</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="faq.html" class="header__nav-link">よくある質問</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact">
+            <a
+              href="contact.html"
+              class="header__nav-link header__nav-link--cta"
+            >
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__hamburger"
+        aria-label="メニュー"
+        aria-expanded="false"
+        aria-controls="global-nav"
+      >
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+      <div class="header__mask"></div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="page-header">
+        <div class="page-header__image">
+          <img
+            src="img/company/mainvisual.jpg"
+            alt="Interior Design"
+            class="page-header__img"
+          />
+        </div>
+        <div class="page-header__title-area">
+          <h1 class="page-header__title">
+            <span class="page-header__title-en">COMPANY</span>
+            <span class="page-header__title-ja">会社情報</span>
+          </h1>
+        </div>
+      </div>
+      <!-- ページ内リンク -->
+      <ul class="page-links wrapper">
+        <li class="page-links__item">
+          <a href="#philosophy" class="page-links__link">企業理念</a>
+        </li>
+        <li class="page-links__item">
+          <a href="#service" class="page-links__link">事業紹介</a>
+        </li>
+        <li class="page-links__item">
+          <a href="#overview" class="page-links__link">会社概要</a>
+        </li>
+        <li class="page-links__item">
+          <a href="#access" class="page-links__link">アクセス</a>
+        </li>
+      </ul>
+      <!-- 企業理念 -->
+      <section id="philosophy" class="philosophy u-mt-section-sm">
+        <h2 class="c-heading">
+          <span class="c-heading-text">企業理念</span>
+        </h2>
+        <div class="philosophy__inner l-wrapper">
+          <div class="philosophy__content">
+            <div class="philosophy__body">
+              <p class="philosophy__lead">
+                空間デザインで<br />新たな価値を創造する
+              </p>
+              <p class="philosophy__text">
+                私たちはインテリアをデザインするだけでなく、空間全体をデザインすることでその空間に新たな価値を創造します。
+              </p>
+              <p class="philosophy__text">
+                人が喜び感動し、そして心を通い合わせるようなそんな空間創りのお手伝いをいたします。
+              </p>
+            </div>
+          </div>
+          <div class="philosophy__image philosophy__image--top">
+            <img
+              src="img/company/philosophy1.jpg"
+              alt=""
+              loading="lazy"
+              class="philosophy__img"
+            />
+          </div>
+          <div class="philosophy__image philosophy__image--bottom">
+            <img
+              src="img/company/philosophy2.jpg"
+              alt=""
+              loading="lazy"
+              class="philosophy__img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- 事業紹介 -->
+      <section id="service" class="service u-mt-section">
+        <h2 class="c-heading">
+          <span class="c-heading-text">事業紹介</span>
+        </h2>
+        <div class="service__inner l-wrapper">
+          <a href="products.html" class="service__card">
+            <div class="service__content">
+              <p class="service__title-ja">インテリアデザイン</p>
+              <p class="service__title-en">Interior Design</p>
+              <p class="service__description">
+                ソファ、デスク、チェア、ダイニングを中心に、オリジナルのインテリアをデザインしています。
+              </p>
+              <p class="service__more">VIEW MORE</p>
+            </div>
+            <div class="service__image">
+              <img
+                src="img/company/products-interior.jpg"
+                alt=""
+                loading="lazy"
+                class="service__img"
+              />
+            </div>
+          </a>
+          <a href="works.html" class="service__card service__card--reverse">
+            <div class="service__content">
+              <p class="service__title-ja">住空間・商業空間のデザイン</p>
+              <p class="service__title-en">Store Design</p>
+              <p class="service__description">
+                住む人やその空間を利用されるお客様が笑顔になるような空間のデザインを行なっています。
+              </p>
+              <p class="service__more">VIEW MORE</p>
+            </div>
+            <div class="service__image">
+              <img
+                src="img/company/products-store.jpg"
+                alt=""
+                loading="lazy"
+                class="service__img"
+              />
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- 会社概要 -->
+      <section id="overview" class="overview u-mt-section">
+        <h2 class="c-heading">
+          <span class="c-heading-text">会社概要</span>
+        </h2>
+        <dl class="overview__list l-wrapper">
+          <div class="overview__item">
+            <dt class="overview__term">会社名</dt>
+            <dd class="overview__description">Interior Design株式会社</dd>
+          </div>
+          <div class="overview__item">
+            <dt class="overview__term">代表取締役</dt>
+            <dd class="overview__description">○○ ○○</dd>
+          </div>
+          <div class="overview__item">
+            <dt class="overview__term">設立</dt>
+            <dd class="overview__description">2000年4月</dd>
+          </div>
+          <div class="overview__item">
+            <dt class="overview__term">所在地</dt>
+            <dd class="overview__description">東京都○○○○○○○○○○○○○</dd>
+          </div>
+          <div class="overview__item">
+            <dt class="overview__term">事業内容</dt>
+            <dd class="overview__description">
+              インテリアデザイン<br />
+              住空間及び商業空間のデザイン
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <!-- アクセス -->
+      <section id="access" class="access u-mt-section">
+        <h2 class="c-heading">
+          <span class="c-heading-text">アクセス</span>
+        </h2>
+        <div class="access__inner l-wrapper">
+          <div class="access__info">
+            <p class="access__address">
+              〒999-9999 東京都○○○○○○○○○○○○○○<br />
+              TEL 03-999-9999 / FAX 03-999-9999
+            </p>
+            <a
+              href="https://www.google.com/maps/..."
+              target="_blank"
+              class="access__map-link"
+            >
+              Google Map
+            </a>
+          </div>
+        </div>
+        <div class="access__map">
+          <iframe
+            title="会社所在地の地図"
+            src="https://www.google.com/maps/embed?pb=..."
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            rel="noopener noreferrer"
+            class="access__iframe"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer u-mt-section">
+      <div class="footer__nav">
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="company.html" class="footer__link">会社情報</a>
+          </p>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="company.html#philosophy" class="footer__link"
+                >企業理念</a
+              >
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#service" class="footer__link">事業紹介</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#overview" class="footer__link">会社概要</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#access" class="footer__link">アクセス</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="products.html" class="footer__link">商品一覧</a>
+          </p>
+          <p class="footer__nav-title">
+            <a href="works.html" class="footer__link">実績紹介</a>
+          </p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="faq.html" class="footer__link">よくある質問</a>
+          </p>
+          <p class="footer__nav-title">
+            <a href="contact.html" class="footer__link">お問い合わせ</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer__info">
+        <a href="index.html" class="footer__logo-link">
+          <img
+            src="img/common/logo-w.svg"
+            alt="Interior Design"
+            class="footer__logo"
+          />
+        </a>
+        <div class="footer__company">
+          <p class="footer__address">
+            〒999-9999<br />
+            東京都○○○○○○○○○○○○○○
+          </p>
+          <p class="footer__tel">TEL: 03-9999-9999</p>
+        </div>
+        <p class="footer__copyright">
+          <small>Copyright © Interior Design. All rights reserved.</small>
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="オリジナルインテリアのデザインや住空間、商業空間の空間デザインを行なっています。人々が笑顔になるような価値ある空間を創造します。"
+    />
+    <title>Interior Design</title>
+    <link rel="icon" href="img/common/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/top.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img
+            src="img/common/logo.svg"
+            alt="Interior Design"
+            class="header__logo-img"
+          />
+        </a>
+      </h1>
+      <nav
+        class="header__nav"
+        id="global-nav"
+        aria-label="グローバルナビゲーション"
+      >
+        <ul class="header__nav-list" id="subnav-company">
+          <li class="header__nav-item header__nav-item--has-children">
+            <button
+              class="header__nav-label"
+              aria-expanded="false"
+              aria-controls="subnav-company"
+            >
+              会社情報
+            </button>
+            <ul class="header__subnav-list">
+              <li class="header__subnav-item">
+                <a href="company.html#philosophy" class="header__subnav-link"
+                  >企業理念</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#service" class="header__subnav-link"
+                  >事業紹介</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#overview" class="header__subnav-link"
+                  >会社概要</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#access" class="header__subnav-link"
+                  >アクセス</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="products.html" class="header__nav-link">商品一覧</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="works.html" class="header__nav-link">実績紹介</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="faq.html" class="header__nav-link">よくある質問</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact">
+            <a
+              href="contact.html"
+              class="header__nav-link header__nav-link--cta"
+            >
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__hamburger"
+        aria-label="メニュー"
+        aria-expanded="false"
+        aria-controls="global-nav"
+      >
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+      <div class="header__mask"></div>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- MainVisual -->
+      <div class="mainvisual">
+        <ul class="mainvisual__list">
+          <li class="mainvisual__item">
+            <img
+              src="img/top/mainvisual1.jpg"
+              alt=""
+              class="mainvisual__image"
+            />
+          </li>
+          <li class="mainvisual__item">
+            <img
+              src="img/top/mainvisual2.jpg"
+              alt=""
+              class="mainvisual__image"
+            />
+          </li>
+          <li class="mainvisual__item">
+            <img
+              src="img/top/mainvisual3.jpg"
+              alt=""
+              class="mainvisual__image"
+            />
+          </li>
+        </ul>
+        <p class="mainvisual__text">
+          空間デザインで<br />
+          新たな価値を創造する
+        </p>
+      </div>
+      <!-- Company -->
+      <section class="company fadein u-mt-section">
+        <h2 class="c-section-title">COMPANY</h2>
+        <div class="company__inner">
+          <div class="company__image">
+            <img
+              src="img/top/company.jpg"
+              alt=""
+              loading="lazy"
+              class="company__img"
+            />
+          </div>
+          <div class="company__content">
+            <p class="company__lead">新たな価値を創造する</p>
+            <p class="company__text">
+              私たちはインテリアを通して住居や店舗の空間をデザインし、
+              その空間の中に新たな価値を創造します。
+            </p>
+            <a href="" class="c-button company__button">VIEW MORE</a>
+          </div>
+        </div>
+      </section>
+      <!-- Products -->
+      <section class="products fadein u-mt-section">
+        <div class="products__header">
+          <h2 class="c-section-title products__title">PRODUCTS</h2>
+          <p class="products__description">
+            私たちがデザインするインテリアをご紹介します。<br />
+            ソファやデスク、チェア、ダイニングまわりを中心にオリジナルのインテリアをご提案いたします。
+          </p>
+        </div>
+        <div class="products__lists">
+          <ul class="products__list">
+            <li class="products__item">
+              <img
+                src="img/top/products1.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products2.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products3.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products4.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products5.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products6.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+          </ul>
+          <ul class="products__list">
+            <li class="products__item">
+              <img
+                src="img/top/products1.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products2.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products3.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products4.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products5.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+            <li class="products__item">
+              <img
+                src="img/top/products6.jpg"
+                alt=""
+                loading="lazy"
+                class="products__img"
+              />
+            </li>
+          </ul>
+        </div>
+        <a href="products.html" class="c-button products__button">VIEW MORE</a>
+      </section>
+      <!-- Works -->
+      <section class="works fadein u-mt-section">
+        <div class="works__content">
+          <h2 class="c-section-title works__title">WORKS</h2>
+          <p class="works__text">
+            住空間及び商業空間のデザインを行なっています。<br />
+            住む人やその空間を利用されるお客様が笑顔になるような空間創りを心掛けています。
+          </p>
+          <p class="works__text">
+            私たちがこれまでに手がけてきた住居と店舗デザインの一部をご紹介いたします。
+          </p>
+          <a href="works.html" class="c-button works__button">VIEW MORE</a>
+        </div>
+        <ul class="works__list">
+          <li class="works__item">
+            <img
+              src="img/top/works1.jpg"
+              alt=""
+              loading="lazy"
+              class="works__img"
+            />
+          </li>
+          <li class="works__item">
+            <img
+              src="img/top/works2.jpg"
+              alt=""
+              loading="lazy"
+              class="works__img"
+            />
+          </li>
+          <li class="works__item">
+            <img
+              src="img/top/works3.jpg"
+              alt=""
+              loading="lazy"
+              class="works__img"
+            />
+          </li>
+          <li class="works__item">
+            <img
+              src="img/top/works4.jpg"
+              alt=""
+              loading="lazy"
+              class="works__img"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- Faq&Contact -->
+      <div class="faq-contact fadein u-mt-section">
+        <a class="faq-contact__item" href="faq.html">
+          <div class="faq-contact__image">
+            <img
+              src="img/top/faq.jpg"
+              alt=""
+              loading="lazy"
+              class="faq-contact__img"
+            />
+          </div>
+          <p class="faq-contact__title">
+            <span class="faq-contact__title-en">FAQ</span>
+            <span class="faq-contact__title-ja">よくある質問</span>
+          </p>
+          <div class="faq-contact__arrow">
+            <img
+              src="img/top/arrow.svg"
+              alt=""
+              class="faq-contact__arrow-icon"
+            />
+          </div>
+        </a>
+        <a class="faq-contact__item" href="contact.html">
+          <div class="faq-contact__image">
+            <img
+              src="img/top/contact.jpg"
+              alt=""
+              loading="lazy"
+              class="faq-contact__img"
+            />
+          </div>
+          <p class="faq-contact__title">
+            <span class="faq-contact__title-en">CONTACT</span>
+            <span class="faq-contact__title-ja">お問い合わせ</span>
+          </p>
+          <div class="faq-contact__arrow">
+            <img
+              src="img/top/arrow.svg"
+              alt=""
+              class="faq-contact__arrow-icon"
+            />
+          </div>
+        </a>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__nav">
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="company.html" class="footer__link">会社情報</a>
+          </p>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="company.html#philosophy" class="footer__link"
+                >企業理念</a
+              >
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#service" class="footer__link">事業紹介</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#overview" class="footer__link">会社概要</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#access" class="footer__link">アクセス</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="products.html" class="footer__link">商品一覧</a>
+          </p>
+          <p class="footer__nav-title">
+            <a href="works.html" class="footer__link">実績紹介</a>
+          </p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="faq.html" class="footer__link">よくある質問</a>
+          </p>
+          <p class="footer__nav-title">
+            <a href="contact.html" class="footer__link">お問い合わせ</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer__info">
+        <a href="index.html" class="footer__logo-link">
+          <img
+            src="img/common/logo-w.svg"
+            alt="Interior Design"
+            class="footer__logo"
+          />
+        </a>
+        <div class="footer__company">
+          <p class="footer__address">
+            〒999-9999<br />
+            東京都○○○○○○○○○○○○○○
+          </p>
+          <p class="footer__tel">TEL: 03-9999-9999</p>
+        </div>
+        <p class="footer__copyright">
+          <small>Copyright © Interior Design. All rights reserved.</small>
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interior Designの実績紹介ページです。住む人やその空間を利用されるお客様が笑顔になるような空間創りをお手伝いさせていただきます。"
+    />
+    <title>Works | Interior Design</title>
+    <link rel="icon" href="img/common/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/works.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img
+            src="img/common/logo.svg"
+            alt="Interior Design"
+            class="header__logo-img"
+          />
+        </a>
+      </div>
+      <nav
+        class="header__nav"
+        id="global-nav"
+        aria-label="グローバルナビゲーション"
+      >
+        <ul class="header__nav-list" id="subnav-company">
+          <li class="header__nav-item header__nav-item--has-children">
+            <button
+              class="header__nav-label"
+              aria-expanded="false"
+              aria-controls="subnav-company"
+            >
+              会社情報
+            </button>
+            <ul class="header__subnav-list">
+              <li class="header__subnav-item">
+                <a href="company.html#philosophy" class="header__subnav-link"
+                  >企業理念</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#service" class="header__subnav-link"
+                  >事業紹介</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#overview" class="header__subnav-link"
+                  >会社概要</a
+                >
+              </li>
+              <li class="header__subnav-item">
+                <a href="company.html#access" class="header__subnav-link"
+                  >アクセス</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="products.html" class="header__nav-link">商品一覧</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="works.html" aria-current="page" class="header__nav-link"
+              >実績紹介</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="faq.html" class="header__nav-link">よくある質問</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact">
+            <a
+              href="contact.html"
+              class="header__nav-link header__nav-link--cta"
+            >
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__hamburger"
+        aria-label="メニュー"
+        aria-expanded="false"
+        aria-controls="global-nav"
+      >
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+      <div class="header__mask"></div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="page-header">
+        <div class="page-header__image">
+          <img src="img/works/mainvisual.jpg" alt="" class="page-header__img" />
+        </div>
+        <div class="page-header__title-area">
+          <h1 class="page-header__title">
+            <span class="page-header__title-en">WORKS</span>
+            <span class="page-header__title-ja">実績紹介</span>
+          </h1>
+        </div>
+      </div>
+      <p class="page-text">
+        住む人やその空間を利用されるお客様が笑顔になるような<br
+          class="u-hidden-sp"
+        />
+        空間創りをお手伝いさせていただきます。
+      </p>
+      <ul class="works">
+        <!-- 001 -->
+        <li class="works__item">
+          <div class="works__image">
+            <img
+              src="img/works/works1-1.jpg"
+              class="works__img"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="works__body">
+            <p class="works__title">PROJECT NAME NO.001</p>
+            <dl class="works__info">
+              <div class="works__info-item">
+                <dt class="works__info-term">Category:</dt>
+                <dd class="works__info-desc">Cafe</dd>
+              </div>
+              <div class="works__info-item">
+                <dt class="works__info-term">Location:</dt>
+                <dd class="works__info-desc">Tokyo</dd>
+              </div>
+              <div class="works__info-item">
+                <dt class="works__info-term">Detail:</dt>
+                <dd class="works__info-desc">
+                  東京都渋谷区にあるカフェの店舗デザインを担当させていただきました。
+                </dd>
+              </div>
+            </dl>
+            <button class="works__modal-open" data-modal="modal1">
+              More Images
+              <img
+                class="works__modal-icon"
+                src="img/works/icon-modal-open.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="works__modal" id="modal1">
+            <div class="works__modal-content">
+              <button class="works__modal-close">
+                <img
+                  src="img/works/icon-modal-close.svg"
+                  class="works__modal-close-icon"
+                  alt=""
+                />
+              </button>
+              <p class="works__modal-title">PROJECT NAME NO.001</p>
+              <div class="works__modal-images">
+                <img src="img/works/works1-1.jpg" loading="lazy" alt="" />
+                <img src="img/works/works1-2.jpg" loading="lazy" alt="" />
+                <img src="img/works/works1-3.jpg" loading="lazy" alt="" />
+                <img src="img/works/works1-4.jpg" loading="lazy" alt="" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 002 -->
+        <li class="works__item">
+          <div class="works__image">
+            <img
+              src="img/works/works2-1.jpg"
+              class="works__img"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="works__body">
+            <p class="works__title">PROJECT NAME NO.002</p>
+            <dl class="works__info">
+              <div class="works__info-item">
+                <dt class="works__info-term">Category:</dt>
+                <dd class="works__info-desc">Apparel</dd>
+              </div>
+              <div class="works__info-item">
+                <dt class="works__info-term">Location:</dt>
+                <dd class="works__info-desc">Osaka</dd>
+              </div>
+              <div class="works__info-item">
+                <dt class="works__info-term">Detail:</dt>
+                <dd class="works__info-desc">
+                  大阪府大阪市にあるアパレルブランドの店舗デザインを担当させていただきました。
+                </dd>
+              </div>
+            </dl>
+            <button class="works__modal-open" data-modal="modal2">
+              More Images
+              <img
+                class="works__modal-icon"
+                src="img/works/icon-modal-open.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="works__modal" id="modal2">
+            <div class="works__modal-content">
+              <button class="works__modal-close">
+                <img
+                  src="img/works/icon-modal-close.svg"
+                  class="works__modal-close-icon"
+                  alt=""
+                />
+              </button>
+              <p class="works__modal-title">PROJECT NAME NO.002</p>
+              <div class="works__modal-images">
+                <img src="img/works/works2-1.jpg" loading="lazy" alt="" />
+                <img src="img/works/works2-2.jpg" loading="lazy" alt="" />
+                <img src="img/works/works2-3.jpg" loading="lazy" alt="" />
+                <img src="img/works/works2-4.jpg" loading="lazy" alt="" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 003 -->
+        <li class="works__item">
+          <div class="works__image">
+            <img
+              src="img/works/works3-1.jpg"
+              class="works__img"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div class="works__body">
+            <p class="works__title">PROJECT NAME NO.003</p>
+            <dl class="works__info">
+              <div class="works__info-item">
+                <dt class="works__info-term">Category:</dt>
+                <dd class="works__info-desc">Residence</dd>
+              </div>
+              <div class="works__info-item">
+                <dt class="works__info-term">Location:</dt>
+                <dd class="works__info-desc">Fukuoka</dd>
+              </div>
+              <div class="works__info-item">
+                <dt class="works__info-term">Detail:</dt>
+                <dd class="works__info-desc">
+                  福岡県福岡市にある邸宅のインテリアデザインを担当させていただきました。
+                </dd>
+              </div>
+            </dl>
+            <button class="works__modal-open" data-modal="modal3">
+              More Images
+              <img
+                class="works__modal-icon"
+                src="img/works/icon-modal-open.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="works__modal" id="modal3">
+            <div class="works__modal-content">
+              <button class="works__modal-close">
+                <img
+                  src="img/works/icon-modal-close.svg"
+                  class="works__modal-close-icon"
+                  alt=""
+                />
+              </button>
+              <p class="works__modal-title">PROJECT NAME NO.003</p>
+              <div class="works__modal-images">
+                <img src="img/works/works3-1.jpg" loading="lazy" alt="" />
+                <img src="img/works/works3-2.jpg" loading="lazy" alt="" />
+                <img src="img/works/works3-3.jpg" loading="lazy" alt="" />
+                <img src="img/works/works3-4.jpg" loading="lazy" alt="" />
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <!-- Footer -->
+    <footer class="footer u-mt-section">
+      <div class="footer__nav">
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="company.html" class="footer__link">会社情報</a>
+          </p>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="company.html#philosophy" class="footer__link"
+                >企業理念</a
+              >
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#service" class="footer__link">事業紹介</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#overview" class="footer__link">会社概要</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="company.html#access" class="footer__link">アクセス</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="products.html" class="footer__link">商品一覧</a>
+          </p>
+          <p class="footer__nav-title">
+            <a href="works.html" aria-current="page" class="footer__link"
+              >実績紹介</a
+            >
+          </p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-title">
+            <a href="faq.html" class="footer__link">よくある質問</a>
+          </p>
+          <p class="footer__nav-title">
+            <a href="contact.html" class="footer__link">お問い合わせ</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer__info">
+        <a href="index.html" class="footer__logo-link">
+          <img
+            src="img/common/logo-w.svg"
+            alt="Interior Design"
+            class="footer__logo"
+          />
+        </a>
+        <div class="footer__company">
+          <p class="footer__address">
+            〒999-9999<br />
+            東京都○○○○○○○○○○○○○○
+          </p>
+          <p class="footer__tel">TEL: 03-9999-9999</p>
+        </div>
+        <p class="footer__copyright">
+          <small>Copyright © Interior Design. All rights reserved.</small>
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
