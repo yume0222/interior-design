@@ -55,21 +55,32 @@ fadeElements.forEach((fadeElement) => {
 });
 
 // タブメニュー
-const tabs = document.querySelectorAll(".tabs__item");
-const contents = document.querySelectorAll(".products");
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    tabs.forEach((tab) => {
-      tab.classList.remove("is-active");
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('.tab');
+  const tabPanels = document.querySelectorAll('.products');
+
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      const targetID = '#' + this.getAttribute('aria-controls');
+      
+      //いったんすべてのタブの選択を解除
+      tabs.forEach(function(t) {
+        t.setAttribute('aria-selected', 'false');
+        t.setAttribute('aria-expanded', 'false');
+      });
+      
+      //いったんすべてのタブパネルを非表示
+      tabPanels.forEach(function(panel) {
+        panel.setAttribute('aria-hidden', 'true');
+      });
+      
+      //現在のタブを選択中に変更
+      this.setAttribute('aria-selected', 'true');
+      this.setAttribute('aria-expanded', 'true');
+
+      //現在のタブパネルを表示
+      document.querySelector(targetID).setAttribute('aria-hidden', 'false');
     });
-    contents.forEach((content) => {
-      content.classList.remove("is-active");
-    });
-    tab.classList.add("is-active");
-    const target = tab.dataset.tab;
-    document
-      .querySelector(`[data-content="${target}"]`)
-      .classList.add("is-active");
   });
 });
 

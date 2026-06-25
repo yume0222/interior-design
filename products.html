@@ -119,20 +119,99 @@
         </div>
       </div>
       <!-- タブ -->
-      <ul class="tabs">
-        <li class="tabs__item tabs__item--all is-active" data-tab="all">
-          全て
+      <ul class="tabs" role="tablist">
+        <li
+          class="tabs__item tabs__item--all"
+          role="presentation"
+        >
+          <button
+            type="button"
+            role="tab"
+            id="tab01"
+            class="tab"
+            aria-controls="tabpanel01"
+            aria-expanded="true"
+            aria-selected="true"
+          >
+            全て
+          </button>
         </li>
-        <li class="tabs__item tabs__item--sofa" data-tab="sofa">ソファ</li>
-        <li class="tabs__item tabs__item--desk" data-tab="desk">デスク</li>
-        <li class="tabs__item tabs__item--chair" data-tab="chair">チェア</li>
-        <li class="tabs__item tabs__item--dining" data-tab="dining">
-          ダイニング
+        <li
+          class="tabs__item tabs__item--sofa"
+          role="presentation"
+        >
+          <button
+            type="button"
+            role="tab"
+            id="tab02"
+            class="tab"
+            aria-controls="tabpanel02"
+            aria-expanded="false"
+            aria-selected="false"
+          >
+          ソファ
+          </button>
+        </li>
+        <li
+          class="tabs__item tabs__item--desk"
+          role="presentation"
+        >
+          <button
+            type="button"
+            role="tab"
+            id="tab03"
+            class="tab"
+            aria-controls="tabpanel03"
+            aria-expanded="false"
+            aria-selected="false"
+          >
+            デスク
+          </button>
+        </li>
+        <li
+          class="tabs__item tabs__item--chair"
+          role="presentation"
+        >
+          <button
+            type="button"
+            role="tab"
+            id="tab04"
+            class="tab"
+            aria-controls="tabpanel04"
+            aria-expanded="false"
+            aria-selected="false"
+          >
+            チェア
+          </button>
+        </li>
+        <li
+          class="tabs__item tabs__item--dining"
+          role="presentation"
+        >
+          <button
+            type="button"
+            role="tab"
+            id="tab05"
+            class="tab"
+            aria-controls="tabpanel05"
+            aria-expanded="false"
+            aria-selected="false"
+          >
+            ダイニング
+          </button>
         </li>
       </ul>
+
       <!-- 全て -->
-      <ul class="products products--all is-active" data-content="all">
-        <li class="products__item">
+      <div
+        class="products products--all"
+        role="tabpanel"
+        id="tabpanel01"
+        aria-labelledby="tab01"
+        aria-hidden="false"
+        tabindex="0"
+      >
+        <div class="products__item">
           <img
             src="img/products/products1.jpg"
             alt=""
@@ -143,8 +222,8 @@
             <p class="products__name">Product Name 01</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products2.jpg"
             alt=""
@@ -155,8 +234,8 @@
             <p class="products__name">Product Name 02</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products3.jpg"
             alt=""
@@ -167,8 +246,8 @@
             <p class="products__name">Product Name 03</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products4.jpg"
             alt=""
@@ -179,8 +258,8 @@
             <p class="products__name">Product Name 04</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products5.jpg"
             alt=""
@@ -191,8 +270,8 @@
             <p class="products__name">Product Name 05</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products6.jpg"
             alt=""
@@ -203,8 +282,8 @@
             <p class="products__name">Product Name 06</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products7.jpg"
             alt=""
@@ -215,8 +294,8 @@
             <p class="products__name">Product Name 07</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products8.jpg"
             alt=""
@@ -227,8 +306,8 @@
             <p class="products__name">Product Name 08</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products9.jpg"
             alt=""
@@ -239,8 +318,8 @@
             <p class="products__name">Product Name 09</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products10.jpg"
             alt=""
@@ -251,8 +330,8 @@
             <p class="products__name">Product Name 10</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products11.jpg"
             alt=""
@@ -263,8 +342,8 @@
             <p class="products__name">Product Name 11</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products12.jpg"
             alt=""
@@ -275,8 +354,8 @@
             <p class="products__name">Product Name 12</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products13.jpg"
             alt=""
@@ -287,8 +366,8 @@
             <p class="products__name">Product Name 13</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products14.jpg"
             alt=""
@@ -299,8 +378,8 @@
             <p class="products__name">Product Name 14</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products15.jpg"
             alt=""
@@ -311,11 +390,19 @@
             <p class="products__name">Product Name 15</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+
       <!-- ソファ -->
-      <ul class="products products--sofa" data-content="sofa">
-        <li class="products__item">
+      <div
+        class="products products--sofa"
+        role="tabpanel"
+        id="tabpanel02"
+        aria-labelledby="tab02"
+        aria-hidden="true"
+        tabindex="0"
+      >
+        <div class="products__item">
           <img
             src="img/products/products1.jpg"
             alt=""
@@ -326,8 +413,8 @@
             <p class="products__name">Product Name 01</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products4.jpg"
             alt=""
@@ -338,8 +425,8 @@
             <p class="products__name">Product Name 04</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products7.jpg"
             alt=""
@@ -350,8 +437,8 @@
             <p class="products__name">Product Name 07</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products10.jpg"
             alt=""
@@ -362,8 +449,8 @@
             <p class="products__name">Product Name 10</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products15.jpg"
             alt=""
@@ -374,11 +461,19 @@
             <p class="products__name">Product Name 15</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+
       <!-- デスク -->
-      <ul class="products products--desk" data-content="desk">
-        <li class="products__item">
+      <div
+        class="products products--desk"
+        role="tabpanel"
+        id="tabpanel03"
+        aria-labelledby="tab03"
+        aria-hidden="true"
+        tabindex="0"
+      >
+        <div class="products__item">
           <img
             src="img/products/products2.jpg"
             alt=""
@@ -389,8 +484,8 @@
             <p class="products__name">Product Name 02</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products5.jpg"
             alt=""
@@ -401,8 +496,8 @@
             <p class="products__name">Product Name 05</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products8.jpg"
             alt=""
@@ -413,8 +508,8 @@
             <p class="products__name">Product Name 08</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products11.jpg"
             alt=""
@@ -425,11 +520,19 @@
             <p class="products__name">Product Name 11</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+
       <!-- チェア -->
-      <ul class="products products--chair" data-content="chair">
-        <li class="products__item">
+      <div
+        class="products products--chair"
+        role="tabpanel"
+        id="tabpanel04"
+        aria-labelledby="tab04"
+        aria-hidden="true"
+        tabindex="0"
+      >
+        <div class="products__item">
           <img
             src="img/products/products3.jpg"
             alt=""
@@ -440,8 +543,8 @@
             <p class="products__name">Product Name 03</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products6.jpg"
             alt=""
@@ -452,8 +555,8 @@
             <p class="products__name">Product Name 06</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products9.jpg"
             alt=""
@@ -464,8 +567,8 @@
             <p class="products__name">Product Name 09</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products12.jpg"
             alt=""
@@ -476,11 +579,19 @@
             <p class="products__name">Product Name 12</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+
       <!-- ダイニング -->
-      <ul class="products products--dining" data-content="dining">
-        <li class="products__item">
+      <div
+        class="products products--dining"
+        role="tabpanel"
+        id="tabpanel05"
+        aria-labelledby="tab05"
+        aria-hidden="true"
+        tabindex="0"
+      >
+        <div class="products__item">
           <img
             src="img/products/products13.jpg"
             alt=""
@@ -491,8 +602,8 @@
             <p class="products__name">Product Name 13</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <img
             src="img/products/products14.jpg"
             alt=""
@@ -503,8 +614,8 @@
             <p class="products__name">Product Name 14</p>
             <p class="products__price">¥99,999</p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </main>
     <!-- Footer -->
     <footer class="footer u-mt-section">

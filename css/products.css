@@ -17,14 +17,18 @@
   border-right: 1px solid var(--color-base);
   border-left: 1px solid var(--color-base);
   font-size: 0.625rem;
+}
+.tab {
+  width: 100%;
+  height: 100%;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.tabs__item:hover {
+.tab[aria-expanded="true"] {
   background-color: var(--color-base);
   color: var(--color-white);
 }
-.tabs__item.is-active {
+.tab:hover {
   background-color: var(--color-base);
   color: var(--color-white);
 }
@@ -34,28 +38,29 @@
   gap: 12px;
   margin-top: 10px;
 }
-.products.is-active {
+.products[aria-hidden="false"] {
   display: grid;
 }
 .products__item {
   position: relative;
   width: 100%;
 }
-.products__info {
+.products__item .products__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: var(--color-overlay);
   color: var(--color-white);
-  text-align: center;
   transition: all 0.6s ease;
   opacity: 0;
 }
-.products__info:hover {
+.products__item:hover .products__info {
   opacity: 1;
 }
 .products__name {
@@ -64,8 +69,6 @@
 .products__price {
   margin-top: 5px;
   font-size: 0.875rem;
-}
-@media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1024px) {
   .tabs {
