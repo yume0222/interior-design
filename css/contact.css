@@ -1,11 +1,97 @@
 @charset 'utf-8';
 
-.c-input {
+/*----------------------------------------
+	お問合せ専用
+----------------------------------------*/
+
+/*----------------------------------------
+	Form Parts
+----------------------------------------*/
+/*各フォーム部品の基本スタイルを上書き*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+textarea,
+select {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 100%;
   border: 1px solid var(--color-gray-100);
   padding: 20px;
 }
+/*フォーカス時*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus,
+input[type="number"],
+input[type="password"] {
+  outline: none;
+  box-shadow: 0 0 5px rgba(55, 149, 47, 0.7);
+}
+
+/*checkbox
+------------------------------------*/
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+/*クリック範囲*/
+input[type="checkbox"] + span {
+  display: inline-block;
+  position: relative;
+  padding: 0.18em 0.18em 0.18em 1.18em;
+  line-height: 1;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/*フォーカス時*/
+input[type="checkbox"] + :focus + span {
+  outline: none;
+  box-shadow: 0 0 5px rgba(55, 149, 47, 0.7);
+}
+
+/*チェックボックススタイル*/
+input[type="checkbox"] + span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0.8125em;
+  height: 0.8125em;
+  border: 1px solid var(--color-base);
+  background: var(--color-white);
+  line-height: 1;
+  vertical-align: middle;
+  transform: translateY(-50%);
+}
+/*チェックボックス未チェック時*/
+input[type="checkbox"] + span:after {
+  display: none;
+  content: "";
+}
+/*チェックボックスチェック時*/
+input[type="checkbox"]:checked + span:after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0.24em;
+  width: 0.3em;
+  height: 0.59em;
+  border-bottom: 2px solid #37952f;
+  border-right: 2px solid #37952f;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/*----------------------------------------
+	全体レイアウト
+----------------------------------------*/
 .contact {
   max-width: 1280px;
   margin: 0 auto;
@@ -26,11 +112,20 @@
   flex-direction: column;
   gap: 40px;
 }
+.contact__item fieldset,
+.contact__item legend {
+  display: contents;
+}
 .contact__item {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 0.9375rem;
+}
+.contact__field {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .contact__term {
   display: flex;
@@ -39,6 +134,32 @@
   padding: 20px;
   background-color: var(--color-bg);
 }
+@media screen and (min-width: 768px) {
+  .contact__list {
+    gap: 10px;
+  }
+  .contact__item {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .contact__field {
+    padding-right: 40px;
+  }
+  .contact__term {
+    flex-shrink: 0;
+    width: 250px;
+    padding: 60px 20px;
+  }
+  .contact__term--textarea {
+    padding: 100px 20px;
+  }
+}
+
+/*----------------------------------------
+	パーツレイアウト
+----------------------------------------*/
+/*必須ラベル*/
 .contact__required {
   padding: 2px 5px;
   border: 1px solid var(--color-attention);
@@ -46,19 +167,24 @@
   font-size: 0.625rem;
   font-weight: 500;
 }
-.contact__field {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-.contact__field--checkbox {
+
+/* どこでお知りになりましたか？ */
+.checkList_hr {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.contact__checkbox-input {
-  margin-right: 5px;
+@media screen and (min-width: 768px) {
+  .checkList_hr {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
 }
+
+/*----------------------------------------
+	個人情報保護方針チェック
+----------------------------------------*/
 .contact__privacy {
   font-size: 0.9375rem;
 }
@@ -88,39 +214,23 @@
   margin-top: 30px;
   text-align: center;
 }
-.contact__submit {
-  display: grid;
-  place-items: center;
+
+/*----------------------------------------
+	送信ボタン
+----------------------------------------*/
+.formBtns {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.buttonAction {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
   width: 100px;
   height: 40px;
-  margin: 40px auto 0;
   background-color: var(--color-base);
   color: var(--color-white);
   font-size: 0.875rem;
-}
-@media screen and (min-width: 768px) {
-  .contact__list {
-    gap: 10px;
-  }
-  .contact__item {
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-  }
-  .contact__term {
-    flex-shrink: 0;
-    width: 250px;
-    padding: 60px 20px;
-  }
-  .contact__term--textarea {
-    padding: 100px 20px;
-  }
-  .contact__field {
-    padding-right: 40px;
-  }
-  .contact__field--checkbox {
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-  }
+  cursor: pointer;
 }

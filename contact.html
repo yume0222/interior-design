@@ -124,17 +124,18 @@
       <div class="contact">
         <p class="contact__title">お問い合わせフォーム</p>
         <form action="" method="post" class="contact__form">
-          <dl class="contact__list">
+          <div class="contact__list">
+            <!-- お問い合わせ種別 -->
             <div class="contact__item">
-              <dt class="contact__term">
+              <div class="contact__term">
                 <label for="kind" class="contact__label"
                   >お問い合わせ種別</label
                 >
                 <span class="contact__required">必須</span>
-              </dt>
-              <dd class="contact__field">
-                <select name="kind" id="kind" class="contact__select c-input">
-                  <option value="">選択してください</option>
+              </div>
+              <div class="contact__field">
+                <select name="kind" id="kind" required>
+                  <option value="" selected disabled>選択してください</option>
                   <option value="インテリアについて">インテリアについて</option>
                   <option value="店舗デザインについて">
                     店舗デザインについて
@@ -143,109 +144,116 @@
                   <option value="取材依頼について">取材依頼について</option>
                   <option value="その他">その他</option>
                 </select>
-              </dd>
+              </div>
             </div>
+            <!-- お名前 -->
             <div class="contact__item">
-              <dt class="contact__term">
+              <div class="contact__term">
                 <label for="name" class="contact__label">お名前</label>
                 <span class="contact__required">必須</span>
-              </dt>
-              <dd class="contact__field">
+              </div>
+              <div class="contact__field">
                 <input
                   id="name"
                   type="text"
                   name="name"
                   placeholder="インテリア　太郎"
-                  class="contact__input c-input"
+                  required
                 />
-              </dd>
+              </div>
             </div>
+            <!-- メールアドレス -->
             <div class="contact__item">
-              <dt class="contact__term">
+              <div class="contact__term">
                 <label for="mail" class="contact__label">メールアドレス</label>
                 <span class="contact__required">必須</span>
-              </dt>
-              <dd class="contact__field">
+              </div>
+              <div class="contact__field">
                 <input
                   id="mail"
                   type="email"
                   name="mail"
                   placeholder="xxxxxxxx@xxx.xxxx"
-                  class="contact__input c-input"
+                  required
                 />
-              </dd>
+              </div>
             </div>
+            <!-- どこでお知りになりましたか？ -->
             <div class="contact__item">
-              <dt class="contact__term">どこでお知りになりましたか？</dt>
-              <dd class="contact__field contact__field--checkbox">
-                <div class="contact__checkbox">
-                  <input
-                    type="checkbox"
-                    name="know[]"
-                    id="know-1"
-                    value="SNS"
-                    class="contact__checkbox-input"
-                  />
-                  <label for="know-1" class="contact__checkbox-label"
-                    >SNS</label
-                  >
+              <fieldset>
+                <legend>
+                  <div class="contact__term">どこでお知りになりましたか？</div>
+                </legend>
+                <div class="contact__field">
+                  <ul class="checkList_hr">
+                    <li>
+                      <label for="know-1">
+                        <input
+                          type="checkbox"
+                          name="know[]"
+                          id="know-1"
+                          value="SNS"
+                        />
+                        <span>SNS</span></label
+                      >
+                    </li>
+                    <li>
+                      <label for="know-2">
+                        <input
+                          type="checkbox"
+                          name="know[]"
+                          id="know-2"
+                          value="Google検索"
+                        />
+                        <span>Google検索</span></label
+                      >
+                    </li>
+                    <li>
+                      <label for="know-3">
+                        <input
+                          type="checkbox"
+                          name="know[]"
+                          id="know-3"
+                          value="紹介・口コミ"
+                        />
+                        <span>紹介・口コミ</span></label
+                      >
+                    </li>
+                    <li>
+                      <label for="know-4">
+                        <input
+                          type="checkbox"
+                          name="know[]"
+                          id="know-4"
+                          value="その他"
+                        />
+                        <span>その他</span></label
+                      >
+                    </li>
+                  </ul>
                 </div>
-                <div class="contact__checkbox">
-                  <input
-                    type="checkbox"
-                    name="know[]"
-                    id="know-2"
-                    value="Google検索"
-                    class="contact__checkbox-input"
-                  />
-                  <label for="know-2" class="contact__checkbox-label"
-                    >Google検索</label
-                  >
-                </div>
-                <div class="contact__checkbox">
-                  <input
-                    type="checkbox"
-                    name="know[]"
-                    id="know-3"
-                    value="紹介・口コミ"
-                    class="contact__checkbox-input"
-                  />
-                  <label for="know-3" class="contact__checkbox-label"
-                    >紹介・口コミ</label
-                  >
-                </div>
-                <div class="contact__checkbox">
-                  <input
-                    type="checkbox"
-                    name="know[]"
-                    id="know-4"
-                    value="その他"
-                    class="contact__checkbox-input"
-                  />
-                  <label for="know-4" class="contact__checkbox-label"
-                    >その他</label
-                  >
-                </div>
-              </dd>
+              </fieldset>
             </div>
+            <!-- お問い合わせ内容 -->
             <div class="contact__item">
-              <dt class="contact__term contact__term--textarea">
+              <div class="contact__term contact__term--textarea">
                 <label for="message" class="contact__label"
                   >お問い合わせ内容</label
                 >
                 <span class="contact__required">必須</span>
-              </dt>
-              <dd class="contact__field">
+              </div>
+              <div class="contact__field">
                 <textarea
                   id="message"
                   cols="40"
                   rows="8"
                   name="message"
-                  class="c-input contact__textarea"
+                  required
                 ></textarea>
-              </dd>
+              </div>
             </div>
-          </dl>
+          </div>
+          <!-- 個人情報保護方針チェック -->
           <div class="contact__privacy">
             <div class="contact__privacy-text">
               <p class="contact__privacy-title">個人情報の取り扱いについて</p>
@@ -271,23 +279,16 @@
               </ol>
             </div>
             <div class="contact__privacy-agree">
-              <input
-                type="checkbox"
-                name="privacy"
-                id="privacy"
-                class="contact__checkbox-input"
-              />
-              <label for="privacy" class="contact__checkbox-label">
-                個人情報の取り扱いに同意する
+              <label>
+                <input type="checkbox" name="agree" value="同意します" />
+                <span>個人情報の取り扱いに同意する</span>
               </label>
             </div>
           </div>
-          <input
-            type="submit"
-            name="send"
-            value="送信"
-            class="contact__submit"
-          />
+          <!-- 送信ボタン -->
+          <div class="formBtns">
+            <button class="buttonAction">送信</button>
+          </div>
         </form>
       </div>
     </main>
