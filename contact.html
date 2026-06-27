@@ -31,57 +31,49 @@
           />
         </a>
       </div>
-      <nav
-        class="header__nav"
-        id="global-nav"
-        aria-label="グローバルナビゲーション"
-      >
-        <ul class="header__nav-list" id="subnav-company">
-          <li class="header__nav-item header__nav-item--has-children">
+      <nav class="gnav" id="gnav" aria-label="メインメニュー">
+        <ul class="gnav__list">
+          <li class="gnav__item gnav__item--has-children">
             <button
-              class="header__nav-label"
+              class="gnav__label"
               aria-expanded="false"
-              aria-controls="subnav-company"
+              aria-controls="subnav"
             >
               会社情報
             </button>
-            <ul class="header__subnav-list">
-              <li class="header__subnav-item">
-                <a href="company.html#philosophy" class="header__subnav-link"
+            <ul class="subnav__list" id="subnav" aria-label="サブメニュー">
+              <li class="subnav__item">
+                <a href="company.html#philosophy" class="subnav__link"
                   >企業理念</a
                 >
               </li>
-              <li class="header__subnav-item">
-                <a href="company.html#service" class="header__subnav-link"
-                  >事業紹介</a
-                >
+              <li class="subnav__item">
+                <a href="company.html#service" class="subnav__link">事業紹介</a>
               </li>
-              <li class="header__subnav-item">
-                <a href="company.html#overview" class="header__subnav-link"
+              <li class="subnav__item">
+                <a href="company.html#overview" class="subnav__link"
                   >会社概要</a
                 >
               </li>
-              <li class="header__subnav-item">
-                <a href="company.html#access" class="header__subnav-link"
-                  >アクセス</a
-                >
+              <li class="subnav__item">
+                <a href="company.html#access" class="subnav__link">アクセス</a>
               </li>
             </ul>
           </li>
-          <li class="header__nav-item">
-            <a href="products.html" class="header__nav-link">商品一覧</a>
+          <li class="gnav__item">
+            <a href="products.html" class="gnav__link">商品一覧</a>
           </li>
-          <li class="header__nav-item">
-            <a href="works.html" class="header__nav-link">実績紹介</a>
+          <li class="gnav__item">
+            <a href="works.html" class="gnav__link">実績紹介</a>
           </li>
-          <li class="header__nav-item">
-            <a href="faq.html" class="header__nav-link">よくある質問</a>
+          <li class="gnav__item">
+            <a href="faq.html" class="gnav__link">よくある質問</a>
           </li>
-          <li class="header__nav-item header__nav-item--contact">
+          <li class="gnav__item gnav__item--cta">
             <a
               href="contact.html"
+              class="gnav__link gnav__link--cta"
               aria-current="page"
-              class="header__nav-link header__nav-link--cta"
             >
               お問い合わせ
             </a>
@@ -89,14 +81,14 @@
         </ul>
       </nav>
       <button
-        class="header__hamburger"
-        aria-label="メニュー"
+        class="hamburger"
+        aria-label="メニューを開く"
         aria-expanded="false"
-        aria-controls="global-nav"
+        aria-controls="gnav"
       >
-        <span class="header__hamburger-line"></span>
-        <span class="header__hamburger-line"></span>
-        <span class="header__hamburger-line"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
+        <span class="hamburger__line" aria-hidden="true"></span>
       </button>
       <div class="header__mask"></div>
     </header>
