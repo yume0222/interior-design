@@ -1,5 +1,12 @@
 @charset 'utf-8';
 
+/*----------------------------------------
+	商品一覧ページ専用
+----------------------------------------*/
+
+/*----------------------------------------
+	タブ
+----------------------------------------*/
 .tabs {
   display: flex;
   justify-content: center;
@@ -32,6 +39,18 @@
   background-color: var(--color-base);
   color: var(--color-white);
 }
+@media screen and (min-width: 1024px) {
+  .tabs {
+    gap: 10px;
+  }
+  .tabs__item {
+    font-size: 0.875rem;
+  }
+}
+
+/*----------------------------------------
+	タブパネル
+----------------------------------------*/
 .products {
   display: none;
   grid-template-columns: repeat(2, 1fr);
@@ -71,12 +90,6 @@
   font-size: 0.875rem;
 }
 @media screen and (min-width: 1024px) {
-  .tabs {
-    gap: 10px;
-  }
-  .tabs__item {
-    font-size: 0.875rem;
-  }
   .products {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 40px;

@@ -1,4 +1,4 @@
-// Header
+// ハンバーガーメニュー
 document.addEventListener("DOMContentLoaded", function () {
   const gnav = document.querySelector(".gnav");
   const hamburger = document.querySelector(".hamburger");
