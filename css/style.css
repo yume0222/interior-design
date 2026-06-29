@@ -284,10 +284,10 @@ a:focus {
 /*----------------------------------------
 	mask
 ----------------------------------------*/
-.header__mask {
+.mask {
   display: none;
 }
-.header__mask[aria-hidden="false"] {
+.mask[aria-hidden="false"] {
   display: block;
   position: fixed;
   z-index: 10;
@@ -296,7 +296,7 @@ a:focus {
   opacity: 0.8;
 }
 @media screen and (min-width: 768px) {
-  .header__mask {
+  .mask {
     display: none !important;
   }
 }

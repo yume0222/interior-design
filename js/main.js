@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const gnav = document.querySelector(".gnav");
   const hamburger = document.querySelector(".hamburger");
   const links = document.querySelectorAll(".gnav__link");
-  const mask = document.querySelector(".header__mask");
+  const mask = document.querySelector(".mask");
 
   // （メニューが非表示・開く操作
   const openMenu = () => {
